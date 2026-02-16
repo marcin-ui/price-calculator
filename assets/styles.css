@@ -1,9 +1,9 @@
 /* --- Background pattern (logo) --- */
 :root{
-  --card-bg: rgba(255,255,255,.92);
-  --border: rgba(0,0,0,.08);
-  --text: #111;
-  --muted: rgba(0,0,0,.6);
+  --card-bg: #fff;
+  --border: #ede6e0;
+  --text: #393635;
+  --muted: #393635;
   --shadow: 0 20px 50px rgba(0,0,0,.14);
   --radius: 18px;
 }
@@ -57,22 +57,23 @@ label{
   font-weight: 700;
   letter-spacing: .06em;
   margin: 0 0 8px 0;
-  color: rgba(0,0,0,.78);
+  color: var(--text);
 }
 
 input{
   width: 100%;
-  border: 1px solid rgba(0,0,0,.12);
+  border: 1px solid var(--border);
   border-radius: 12px;
   padding: 12px 12px;
   font-size: 15px;
-  background: rgba(255,255,255,.92);
+  background: #fff;
+  color: var(--text);
   outline: none;
 }
 
 input:focus{
-  border-color: rgba(0,0,0,.35);
-  box-shadow: 0 0 0 4px rgba(0,0,0,.06);
+  border-color: var(--border);
+  box-shadow: 0 0 0 4px rgba(237,230,224,.55);
 }
 
 .grid{
@@ -95,9 +96,9 @@ input:focus{
 .prefix{
   padding: 10px 12px;
   border-radius: 12px;
-  background: rgba(0,0,0,.05);
-  border: 1px solid rgba(0,0,0,.08);
-  color: rgba(0,0,0,.65);
+  background: #f6f1ed;
+  border: 1px solid var(--border);
+  color: var(--text);
   font-weight: 700;
   font-size: 12px;
   letter-spacing: .04em;
@@ -125,14 +126,14 @@ input:focus{
 .btn:active{ transform: translateY(1px); }
 
 .btn.secondary{
-  background: rgba(0,0,0,.08);
-  color: #111;
-  border: 1px solid rgba(0,0,0,.12);
+  background: #f6f1ed;
+  color: var(--text);
+  border: 1px solid var(--border);
 }
 
 .result{
   margin-top: 16px;
-  border-top: 1px dashed rgba(0,0,0,.12);
+  border-top: 1px dashed var(--border);
   padding-top: 16px;
   text-align: center;
 }
@@ -141,7 +142,7 @@ input:focus{
   font-size: 12px;
   font-weight: 800;
   letter-spacing: .09em;
-  color: rgba(0,0,0,.65);
+  color: var(--text);
 }
 
 .result-value{
@@ -154,13 +155,13 @@ input:focus{
 .result-hint{
   margin-top: 10px;
   font-size: 12px;
-  color: rgba(0,0,0,.55);
+  color: var(--text);
 }
 
 .footer{
   margin-top: 18px;
   font-size: 12px;
-  color: rgba(0,0,0,.55);
+  color: var(--text);
   text-align: center;
 }
 .logo-below{
